@@ -1,0 +1,154 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+#baslik {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3498db;
+    color: #fff;
+    z-index: 1000;
+}
+
+#baslik h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+#baslik p {
+    font-size: 16px;
+}
+
+
+#icerik-alani {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 120px 20px 20px 20px; 
+}
+
+
+#ana-icerik {
+    width: 70%;
+    position: relative;
+}
+
+.blog-yazisi {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.blog-yazisi h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.blog-yazisi p {
+    margin-bottom: 10px;
+}
+
+
+.kutu {
+ margin-top: 20px; /* footer ile arada boşluk bırakır */
+    background-color: greenyellow;
+    color: #2c3e50;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yan-menu {
+    width: 25%;
+    position: sticky;
+    top: 100px; 
+}
+
+#yan-menu nav {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#yan-menu h3 {
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+#yan-menu ul {
+    list-style: none;
+}
+
+#yan-menu ul li {
+    margin-bottom: 8px;
+}
+
+#yan-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#yan-menu ul li a:hover {
+    color: #3498db;
+}
+
+#altbilgi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #3498db;
+    color: #fff;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    #icerik-alani {
+        flex-direction: column;
+    }
+
+    #ana-icerik, #yan-menu {
+        width: 100%;
+    }
+
+    #baslik h1 {
+        font-size: 24px;
+    }
+
+    #baslik p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kutu {
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        font-size: 12px;
+    }
+}
